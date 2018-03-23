@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>赫本家-店铺</title>
+    <meta name="keywords" content="hebenjia,赫本家,赫本家-店铺">
+    <meta name="description" content="hebenjia,赫本家,赫本家-店铺">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/masonry-docs.min.js"></script>
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+</head>
+<body class="storePage">
+<div class="header">
+    <div class="main">
+        <div class="row row-1">
+            <i class="fa fa-bars l mobile-only"></i>
+            <div class="logo-wrap">
+                <a href="index.html"><img src="img/logo1.png" alt=""></a>
+            </div>
+        </div>
+        <div class="row row-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html" class="">首页</a></li>
+                    <li><a href="brand.html" class="">关于赫本家</a></li>
+                    <li><a href="store.html" class="active">产品</a></li>
+                    <li><a href="copration.html" class="">商务加盟</a></li>
+                    <li><a href="contact.html" class="">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="side-menu">
+    <div class="log-w">
+        <img src="img/logo1.png" alt="">
+    </div>
+    <ul>
+        <li><a href="index.html" class="">首页</a></li>
+        <li><a href="brand.html" class="">关于赫本家</a></li>
+        <li><a href="store.html" class="active">产品</a></li>
+        <li><a href="copration.html" class="">商务加盟</a></li>
+        <li><a href="contact.html" class="">联系我们</a></li>
+    </ul>
+    <div class="side-menu-footer">
+
+        <div class="social-link-group l">
+            <a href="javascript:void(0)" target="_blanket" class="ff weixinshow pc">
+                <i class="fa weixin"></i>
+                <span>
+                    <img src="img/arrow1.png" class="arrow1">
+                    <img src="img/qr.png" class="wx">
+                </span>
+            </a>
+            <a href="javascript:void(0)" target="_blanket" class="ff weixinshow moblie">
+                <i class="fa weixin"></i>
+            </a>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function banMove(e){
+        e.preventDefault();
+    }
+    /*	$('.menu').click(function(){
+            $(this).find('ul').toggle();
+        });*/
+    $('.g-selecotr').click(function(){
+        $('.g-selecotr-list').toggleClass('open');
+    });
+    $('.header .fa-bars').click(function(){
+        var $html = $('html');
+        if(!$html.hasClass('show-side-menu')){
+            document.addEventListener('touchmove',banMove);
+        }else{
+            document.removeEventListener('touchmove',banMove);
+        }
+        $html.toggleClass('show-side-menu');
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $(".weixin").click(function(){
+            $(".zzc2").show();
+            $("#show-weixin-m").show();
+            $("html").removeClass("show-side-menu");
+            document.removeEventListener('touchmove',banMove);
+        });
+        $(".zzc2").click(function(){
+            $(".zzc2").hide();
+            $("#show-weixin-m").hide();
+        });
+
+
+        $("#select-lang p").click(function(){
+            var ul = $("#select-lang ul");
+            if(ul.css("display")=="none"){
+                ul.slideDown("fast");
+            }else{
+                ul.slideUp("fast");
+            }
+        });
+
+        $("#select-lang ul li a").click(function(){
+            var txt = $(this).text();
+            $("#select-lang p").html(txt);
+            $("#select-lang ul").hide();
+        });
+
+
+        /*		$("#select-lang").change(function(){
+                    var seleVal = $(this).val();
+                    if(seleVal==1){
+                        zh_tran('s');
+                    }
+                    if(seleVal==2){
+                        zh_tran('t');
+                    }
+
+                })*/
+
+    });
+</script>
+<div class="main-content">
+    <div class="section-1 section-banner">
+        <img src="img/banner.jpg" alt="">
+        <div class="banner-text-ff">产 品</div>
+    </div>
+    <div class="section section-narrow">
+        <h2>产品
+            <small>PRODUCT</small>
+        </h2>
+        <!--<ul class="shop-tabs">-->
+            <!--<li class="current"><a href="store.html">店铺外照片精选</a></li>-->
+            <!--<li><a href="store-in.php.htm">店铺内照片精选</a></li>-->
+        <!--</ul>-->
+    </div>
+    <ul class="g-list section-narrow">
+        <!--1-->
+        <li class='store-item'>
+            <a href="img/product/141704.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/141704.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--2-->
+        <li class='store-item'>
+            <a href="img/product/20160806174350.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/20160806174350.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--3-->
+        <li class='store-item'>
+            <a href="img/product/20160806174354.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/20160806174354.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--4-->
+        <li class='store-item'>
+            <a href="img/product/142198.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/142198.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--5-->
+        <li class='store-item'>
+            <a href="img/product/142606.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/142606.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--6-->
+        <li class='store-item'>
+            <a href="img/product/20160806174401.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/20160806174401.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--7-->
+        <li class='store-item'>
+            <a href="img/product/20160806174404.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/20160806174404.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--8-->
+        <li class='store-item'>
+            <a href="img/product/20160806174409.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/20160806174409.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--9-->
+        <li class='store-item'>
+            <a href="img/product/141812.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/141812.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--10-->
+        <li class='store-item'>
+            <a href="img/product/141966.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/141966.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--11-->
+        <li class='store-item'>
+            <a href="img/product/142185.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/142185.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--12-->
+        <li class='store-item'>
+            <a href="img/product/20160806174419.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/20160806174419.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--13-->
+        <li class='store-item'>
+            <a href="img/product/20160806174433.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/20160806174433.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--14-->
+        <li class='store-item'>
+            <a href="img/product/20160806174429.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/20160806174429.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--15-->
+        <li class='store-item'>
+            <a href="img/product/20160806174440.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/20160806174440.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--16-->
+        <li class='store-item'>
+            <a href="img/product/20160806174459.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/20160806174459.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--17-->
+        <li class='store-item'>
+            <a href="img/product/20160806174450.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/20160806174450.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--18-->
+        <li class='store-item'>
+            <a href="img/product/20160806174510.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/20160806174510.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--19-->
+        <li class='store-item'>
+            <a href="img/product/20160806174502.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/20160806174502.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--20-->
+        <li class='store-item'>
+            <a href="img/product/20160806174514.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/20160806174514.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--21-->
+        <li class='store-item'>
+            <a href="img/product/20160806174517.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/20160806174517.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--22-->
+        <li class='store-item'>
+            <a href="img/product/142614.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/142614.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!--23-->
+        <li class='store-item'>
+            <a href="img/product/20160806174522.jpg">
+                <div class="img-wrap">
+                    <img src="img/product/20160806174522.jpg" alt="">
+                </div>
+                <div class="pc img-wrap-hover">
+                    <div class="img-w-bg">
+                        <div class="img-w-bbb">
+                            <img src="img/img-hover-eye.png" alt=""><br>
+                            查看大图
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <!--<div class="pc">-->
+        <!--<a href="javascript:void(0)" class="readmore">查看更多</a>-->
+    <!--</div>-->
+    <!--<div class="moblie">-->
+        <!--<a href="javascript:void(0)" class="readmore">查看更多</a>-->
+    <!--</div>-->
+
+    <div id="read-mes"></div>
+</div>
+<div class="pc">
+    <div class="back-to-top">
+        <div class="to-top"><img src="img/topper.png" alt=""></div>
+    </div>
+</div>
+<div class="moblie">
+    <div class="back-to-top">
+        <div class="to-top">返 回 顶 部</div>
+    </div>
+</div>
+<div class="footer">
+    <div class="l">
+        <ul class="com-info">
+            <li class="head-link">公 司 信 息</li>
+            <li><a href="copration.html">加入我们</a></li>
+            <li><a href="copration.html">商务合作</a></li>
+        </ul>
+        <ul class="help">
+            <li class="head-link">帮 助</li>
+            <li><a href="store.html">门店信息</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="r" style="margin-top:20px;">
+
+        <div class="social-link-group l" id="social-footer">
+
+            <a href="javascript:void(0)" target="_blanket" class="ff weixinshow pc" id="weixin-foot">
+                <i class="fa weixin"></i>
+                <span>
+			<img src="img/qr.png" class="wx"><img src="img/arrow2.png" class="arrow1">
+		</span>
+            </a>
+            <a href="javascript:void(0)" target="_blanket" class="ff weixinshow moblie">
+                <i class="fa weixin"></i>
+            </a>
+
+        </div>
+        <div class="logo-wrap">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="copy-right"><span class="icp">浙ICP备17054339号-1 Copyright</span>©2017 hebenjia.com All Rights Reserved</div>
+    </div>
+</div>
+
+<div class="moblie">
+    <div class="zzc2"></div>
+    <div id="show-weixin-m">
+        <img src="img/qr.png" width="220" height="220" alt="">
+    </div>
+</div>
+<script>
+    $(function () {
+        $(window).scroll(function () {  //只要窗口滚动,就触发下面代码
+            var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
+            if (scrollt > 200) {  //判断滚动后高度超过200px,就显示
+                $(".back-to-top").fadeIn(400); //淡出
+            } else {
+                $(".back-to-top").stop().fadeOut(400); //如果返回或者没有超过,就淡入.必须加上stop()停止之前动画,否则会出现闪动
+            }
+        });
+        $(".back-to-top").click(function () { //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
+            $('html,body').stop().animate({scrollTop: 0}, 1200);
+        });
+
+    });
+
+</script>
+<!--<script language='javascript' src="js/lang.js"></script>-->
+<script language='javascript' src='js/lang.js'></script>	<script type="text/javascript">
+    /*$(".store-item").on('hover',function(){
+                $(this).find(".img-wrap-hover").fadeIn();
+            },function(){
+                $(this).find(".img-wrap-hover").fadeOut();
+            })*/
+    /*$(".store-item").on("mouseover mouseout",function(event){
+     if(event.type == "mouseover"){
+      $(this).find(".img-wrap-hover").fadeIn();
+     }else if(event.type == "mouseout"){
+      $(this).find(".img-wrap-hover").fadeOut();
+     }
+    })*/
+
+    $(function(){
+        if(82<=12){
+            $(".readmore").remove();
+        }
+
+    })
+
+    var gFrom=12;
+    var isGetData=false;
+    $(".readmore").click(function(){
+        if (!isGetData) {
+            isGetData = true;
+            if(gFrom>0){
+                $.ajax({
+                    type: "GET",
+                    url:"ajax/moreg.php?from="+gFrom+"&condition="+"where type=1",
+                    success:function(data){
+                        var jsonObj=$.parseJSON(data);
+                        console.log(jsonObj);
+                        var number=jsonObj.resultCount;
+                        /*var $elems=$(jsonObj.html);
+                        console.log($elems);*/
+                        if(number<12){
+                            gFrom=-1;
+                            $(".readmore").remove();
+                            //$("#read-mes").text("已经是最后一页了...");
+                        }
+                        //$container.append($elems).masonry('appended',$elems);
+                        var $elems=[];
+                        var str;
+                        $.each(jsonObj.html,function(index,value){
+                            str=$(value);
+                            $elems[index]=str[0];
+                        })
+                        $container.append($elems);
+                        $('.g-list').imagesLoaded(function() {
+                            $container.masonry('appended',$elems);
+                            //$container.append($elems).masonry('appended',$elems);
+                        });
+
+                        //$('.g-list').append(html_str);
+                        /*var g_list= document.querySelector('.g-list');
+                        g_list.appendChild(html_str);*/
+
+                        gFrom+=12;
+                        isGetData = false;
+
+                        //msnry.appended(html);
+                        //$container.masonry( 'appended', html_str );
+
+                        /*$container.masonry({
+                        itemSelector: '.store-item',
+                        //gutter: 1,
+                        isAnimated: true,
+                    });*/
+                        //我新加的
+                        //$('.g-list').masonry('appended',$(".g-list li.current"));
+                    }
+                });
+            }else{
+                $(".view-more-wraper").remove();
+            };
+        };
+    });
+
+    $(function(){
+
+        $('.g-list').imagesLoaded(function() {
+
+            $container=$('.g-list').masonry({
+                itemSelector: '.store-item',
+                //gutter: 1,
+                isAnimated: true,
+            });
+        });
+
+        $(".store-item a").fancybox({
+            'transitionIn'	:	'elastic',
+            'transitionOut'	:	'elastic',
+            'speedIn'		:	600,
+            'speedOut'		:	200,
+            'overlayShow'	:	false
+        });
+    });
+</script>
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+</body>
+</html>

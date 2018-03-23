@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>联系我们</title>
+    <meta name="keywords" content="hebenjia,赫本家,赫本家-联系我们">
+    <meta name="description" content="hebenjia,赫本家,赫本家-联系我们">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+</head>
+<body class="contactPage">
+<div class="header">
+    <div class="main">
+        <div class="row row-1">
+            <i class="fa fa-bars l mobile-only"></i>
+            <div class="logo-wrap">
+                <a href="index.html"><img src="img/logo1.png" alt=""></a>
+            </div>
+        </div>
+        <div class="row row-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html" class="">首页</a></li>
+                    <li><a href="brand.html" class="">关于赫本家</a></li>
+                    <li><a href="store.html" class="">产品</a></li>
+                    <li><a href="copration.html" class="">商务加盟</a></li>
+                    <li><a href="contact.html" class="active">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="side-menu">
+    <div class="log-w">
+        <img src="img/logo1.png" alt="">
+    </div>
+    <ul>
+        <li><a href="index.html" class="">首页</a></li>
+        <li><a href="brand.html" class="">关于赫本家</a></li>
+        <li><a href="store.html" class="">产品</a></li>
+        <li><a href="copration.html" class="">商务加盟</a></li>
+        <li><a href="contact.html" class="active">联系我们</a></li>
+    </ul>
+    <div class="side-menu-footer">
+
+        <div class="social-link-group l">
+            <a href="javascript:void(0)" target="_blanket" class="ff weixinshow pc">
+                <i class="fa weixin"></i>
+                <span>
+                    <img src="img/arrow1.png" class="arrow1">
+                    <img src="img/qr.png" class="wx">
+                </span>
+            </a>
+            <a href="javascript:void(0)" target="_blanket" class="ff weixinshow moblie">
+                <i class="fa weixin"></i>
+            </a>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function banMove(e) {
+        e.preventDefault();
+    }
+
+    /*	$('.menu').click(function(){
+            $(this).find('ul').toggle();
+        });*/
+    $('.g-selecotr').click(function () {
+        $('.g-selecotr-list').toggleClass('open');
+    });
+    $('.header .fa-bars').click(function () {
+        var $html = $('html');
+        if (!$html.hasClass('show-side-menu')) {
+            document.addEventListener('touchmove', banMove);
+        } else {
+            document.removeEventListener('touchmove', banMove);
+        }
+        $html.toggleClass('show-side-menu');
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $(".weixin").click(function () {
+            $(".zzc2").show();
+            $("#show-weixin-m").show();
+            $("html").removeClass("show-side-menu");
+            document.removeEventListener('touchmove', banMove);
+        });
+        $(".zzc2").click(function () {
+            $(".zzc2").hide();
+            $("#show-weixin-m").hide();
+        });
+
+
+        $("#select-lang p").click(function () {
+            var ul = $("#select-lang ul");
+            if (ul.css("display") == "none") {
+                ul.slideDown("fast");
+            } else {
+                ul.slideUp("fast");
+            }
+        });
+
+        $("#select-lang ul li a").click(function () {
+            var txt = $(this).text();
+            $("#select-lang p").html(txt);
+            $("#select-lang ul").hide();
+        });
+
+
+        /*		$("#select-lang").change(function(){
+                    var seleVal = $(this).val();
+                    if(seleVal==1){
+                        zh_tran('s');
+                    }
+                    if(seleVal==2){
+                        zh_tran('t');
+                    }
+
+                })*/
+
+    });
+</script>
+<div class="main-content" style="min-height: 1200px;">
+    <div class="section-banner">
+        <img src="img/banner-5.jpg" alt="">
+        <!--<div class="moblie"><img src="img/contact/banner-m.jpg" alt=""></div>-->
+        <div class="banner-text-ff">联系我们</div>
+    </div>
+    <div class="section section-narrow">
+        <h2>联系我们
+            <small>Contact us</small>
+        </h2>
+    </div>
+    <div class="section section-narrow">
+        <!--<img src="1.png" alt="" class="icont-1">-->
+        <!--<img src="2.png" alt="" class="icont-2">-->
+        <!--<img src="3.png" alt="" class="icont-3">-->
+        <ul>
+            <li><label for="">电话</label><span><a href="tel:0571-85093070">0571-85093070</a></span></li>
+            <li>
+                <label for="">地址</label>
+                <span>浙江省杭州市余杭区<br/>乔司三鑫工业园鑫业路2号3层</span>
+            </li>
+            <li>
+                <label for="">微信</label>
+                <span>HBJ-STYLE</span>
+            </li>
+            <li>
+                <label for="">商务合作/加盟</label>
+                <span><a href="tel:13456475729">13456475729</a> / <a href="tel:13735841261">13735841261</a> 杨经理</span>
+            </li>
+            <li>
+                <label for="">邮箱</label>
+                <span>hebenjia@yeah.net</span>
+            </li>
+        </ul>
+        <div class="qr-w">
+            <img src="img/qr.png" alt="">
+            <p>扫一扫，关注我们</p>
+        </div>
+
+    </div>
+</div>
+<div class="pc">
+    <div class="back-to-top">
+        <div class="to-top"><img src="img/topper.png" alt=""></div>
+    </div>
+</div>
+<div class="moblie">
+    <div class="back-to-top">
+        <div class="to-top">返 回 顶 部</div>
+    </div>
+</div>
+<div class="footer">
+    <div class="l">
+        <ul class="com-info">
+            <li class="head-link">公 司 信 息</li>
+            <li><a href="copration.html">加入我们</a></li>
+            <li><a href="copration.html">商务合作</a></li>
+        </ul>
+        <ul class="help">
+            <li class="head-link">帮 助</li>
+            <li><a href="store.html">门店信息</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="r" style="margin-top:20px;">
+
+        <div class="social-link-group l" id="social-footer">
+
+            <a href="javascript:void(0)" target="_blanket" class="ff weixinshow pc" id="weixin-foot">
+                <i class="fa weixin"></i>
+                <span>
+			<img src="img/qr.png" class="wx"><img src="img/arrow2.png" class="arrow1">
+		</span>
+            </a>
+            <a href="javascript:void(0)" target="_blanket" class="ff weixinshow moblie">
+                <i class="fa weixin"></i>
+            </a>
+
+        </div>
+        <div class="logo-wrap">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="copy-right"><span class="icp">浙ICP备17054339号-1 Copyright</span>©2017 hebenjia.com All Rights Reserved</div>
+    </div>
+
+    <div class="moblie">
+        <div class="zzc2"></div>
+        <div id="show-weixin-m">
+            <img src="img/qr.png" width="220" height="220" alt="">
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $(window).scroll(function () {  //只要窗口滚动,就触发下面代码
+                var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
+                if (scrollt > 200) {  //判断滚动后高度超过200px,就显示
+                    $(".back-to-top").fadeIn(400); //淡出
+                } else {
+                    $(".back-to-top").stop().fadeOut(400); //如果返回或者没有超过,就淡入.必须加上stop()停止之前动画,否则会出现闪动
+                }
+            });
+            $(".back-to-top").click(function () { //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
+                $('html,body').stop().animate({scrollTop: 0}, 1200);
+            });
+
+        });
+
+    </script>
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    <!--<script language='javascript' src="js/lang.js"></script>-->
+</div>
+
+</body>
+</html>

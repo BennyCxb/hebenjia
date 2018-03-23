@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>赫本家-首页</title>
+    <meta name="keywords" content="hebenjia,赫本家,赫本家-首页">
+    <meta name="description" content="hebenjia,赫本家,赫本家-首页">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <script src="js/jquery.simpleWeather.min.js"></script>
+    <script src="js/jq_scroll.js" type="text/javascript"></script>
+</head>
+<body class="homePage">
+<div class="header">
+    <div class="main">
+        <div class="row row-1">
+
+            <i class="fa fa-bars l mobile-only"></i>
+            <div class="logo-wrap">
+                <a href="index.html"><img src="img/logo1.png" alt=""></a>
+            </div>
+            <!--<ul class="lang r">-->
+            <!--<li><a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s" style="color: #000">简体</a></li>-->
+            <!--<li><a href="">EN</a></li>-->
+            <!--</ul>-->
+        </div>
+        <div class="row row-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li><a href="brand.html" class="">关于赫本家</a></li>
+                    <li><a href="store.html" class="">产品</a></li>
+                    <li><a href="copration.html" class="">商务加盟</a></li>
+                    <li><a href="contact.html" class="">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="side-menu">
+    <div class="log-w">
+        <img src="img/logo1.png" alt="">
+    </div>
+    <ul>
+        <li><a href="index.html" class="active">首页</a></li>
+        <li><a href="brand.html" class="">关于赫本家</a></li>
+        <li><a href="store.html" class="">产品</a></li>
+        <li><a href="copration.html" class="">商务加盟</a></li>
+        <li><a href="contact.html" class="">联系我们</a></li>
+    </ul>
+    <div class="side-menu-footer">
+
+        <div class="social-link-group l">
+            <a href="javascript:void(0)" target="_blanket" class="ff weixinshow pc">
+                <i class="fa weixin"></i>
+                <span>
+                    <img src="img/arrow1.png" class="arrow1">
+                    <img src="img/qr.png" class="wx">
+                </span>
+            </a>
+            <a href="javascript:void(0)" target="_blanket" class="ff weixinshow moblie">
+                <i class="fa weixin"></i>
+            </a>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function banMove(e) {
+        e.preventDefault();
+    }
+
+    /*	$('.menu').click(function(){
+            $(this).find('ul').toggle();
+        });*/
+    $('.g-selecotr').click(function () {
+        $('.g-selecotr-list').toggleClass('open');
+    });
+    $('.header .fa-bars').click(function () {
+        var $html = $('html');
+        if (!$html.hasClass('show-side-menu')) {
+            document.addEventListener('touchmove', banMove);
+        } else {
+            document.removeEventListener('touchmove', banMove);
+        }
+        $html.toggleClass('show-side-menu');
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $(".weixin").click(function () {
+            $(".zzc2").show();
+            $("#show-weixin-m").show();
+            $("html").removeClass("show-side-menu");
+            document.removeEventListener('touchmove', banMove);
+        });
+        $(".zzc2").click(function () {
+            $(".zzc2").hide();
+            $("#show-weixin-m").hide();
+        });
+
+    });
+</script>
+
+
+<div class="main-content">
+    <div class="section-banner section-1">
+        <img src="img/home/home-11.jpg" alt="">
+    </div>
+
+    <script type="text/javascript" src="js/jq.orbit.js"></script>
+    <script type="text/javascript" src="js/orbit.js"></script>
+
+    <div class="section section-3">
+        <div class="l rfl">
+            <div class="img-w">
+                <div class="pc">
+                    <div class="sectin-3-ff">
+                        <div class="iim"><img src="img/logo1.png" width="100"></div>
+                        <div class="info" style="text-indent: 2em;">
+                            杭州柏奥服饰有限公司成立于2013年，坐落于美丽的西子湖畔。旗下主力时尚女装品牌：HEBENJIA/赫本家。迄今为止，HEBENJIA/赫本家的销售网络已覆盖全国。<br>公司自成立推向市场以来，一直致力于把时尚优雅的着衣文化带给更多时尚知性女性。
+                        </div>
+                    </div>
+                    <img src="img/home/home-3.jpg" alt="">
+                </div>
+                <div class="moblie">
+                    <div class="sectin-3-ff-m">
+                        <div class="iim"><img src="img/logo.png" width="100"></div>
+                        <div class="info" style="text-indent: 2em;">
+                            杭州柏奥服饰有限公司成立于2013年，坐落于美丽的西子湖畔。旗下主力时尚女装品牌：HEBENJIA/赫本家。迄今为止，HEBENJIA/赫本家的销售网络已覆盖全国。<br>公司自成立推向市场以来，一直致力于把时尚优雅的着衣文化带给更多时尚知性女性。
+                        </div>
+                    </div>
+                    <img src="img/home/home-3-m.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="r">
+            <div class="qr-wrap">
+                <img src="img/qr.png" alt="">
+            </div>
+            <div id="weather"></div>
+        </div>
+    </div>
+    <div class="section section-4 section-women">
+        <div class="row-1">
+            <img src="img/home/home-women-1.png" alt="">
+            <div class="des">
+                <h2>WOMAN</h2>
+                <p>
+                    Women's clothes in our shop are diversified<br/>
+                    which can help you to create different fashion style<br/>
+                </p>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="l">
+                <img src="img/home/home-women-2.png" alt="">
+            </div>
+            <div class="r">
+                <img src="img/home/home-women-3.png" alt="">
+            </div>
+            <p>new forces week</p>
+        </div>
+    </div>
+    <div class="section section-5 section-man">
+        <div class="img-w r">
+            <img src="img/home/home-women-4.jpg" alt="">
+        </div>
+        <div class="des ff">
+            <h2>赫本家<br>STYLE</h2>
+            <p>
+                女人的美丽不在于外表，真正美丽的折射<br/>
+                于一个女人灵魂深处，在于亲切的给予和<br/>
+                热情。一个女人的美丽随着岁月而增长。<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——奥黛丽.赫本
+            </p>
+        </div>
+    </div>
+    <div class="section section-6 section-child">
+        <div class="img-w">
+            <div class="pc"><img src="img/home/home-women-5.jpg" alt=""></div>
+            <div class="moblie"><img src="img/home/home-women-5.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <div class="section section-7 section-child">
+        <div class="img-w">
+            <div class="pc"><img src="img/home/home-shop-1.jpg" alt=""></div>
+            <div class="moblie"><img src="img/home/home-shop-1.jpg" alt=""></div>
+        </div>
+    </div>
+
+
+</div>
+<div class="pc">
+    <div class="back-to-top">
+        <div class="to-top"><img src="img/topper.png" alt=""></div>
+    </div>
+</div>
+<div class="moblie">
+    <div class="back-to-top">
+        <div class="to-top">返 回 顶 部</div>
+    </div>
+</div>
+<div class="footer">
+    <div class="l">
+        <ul class="com-info">
+            <li class="head-link">公 司 信 息</li>
+            <li><a href="copration.html">加入我们</a></li>
+            <li><a href="copration.html">商务合作</a></li>
+        </ul>
+        <ul class="help">
+            <li class="head-link">帮 助</li>
+            <li><a href="store.html">门店信息</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="r" style="margin-top:20px;">
+
+        <div class="social-link-group l" id="social-footer">
+
+            <a href="javascript:void(0)" target="_blanket" class="ff weixinshow pc" id="weixin-foot">
+                <i class="fa weixin"></i>
+                <span>
+			<img src="img/qr.png" class="wx"><img src="img/arrow2.png" class="arrow1">
+		</span>
+            </a>
+            <a href="javascript:void(0)" target="_blanket" class="ff weixinshow moblie">
+                <i class="fa weixin"></i>
+            </a>
+
+        </div>
+        <div class="logo-wrap">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="copy-right"><span class="icp">浙ICP备17054339号-1 Copyright</span>©2017 hebenjia.com All Rights
+            Reserved
+        </div>
+    </div>
+</div>
+
+<div class="moblie">
+    <div class="zzc2"></div>
+    <div id="show-weixin-m">
+        <img src="img/qr.png" width="220" height="220" alt="">
+    </div>
+</div>
+<script>
+    $(function () {
+        $(window).scroll(function () {  //只要窗口滚动,就触发下面代码
+            var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
+            if (scrollt > 200) {  //判断滚动后高度超过200px,就显示
+                $(".back-to-top").fadeIn(400); //淡出
+            } else {
+                $(".back-to-top").stop().fadeOut(400); //如果返回或者没有超过,就淡入.必须加上stop()停止之前动画,否则会出现闪动
+            }
+        });
+        $(".back-to-top").click(function () { //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
+            $('html,body').stop().animate({scrollTop: 0}, 1200);
+        });
+
+    });
+
+</script>
+<script language='javascript' src='js/lang.js'></script>
+<div class="zzc"></div>
+
+</body>
+</html>
+
+<script>
+    $(function () {
+        $.simpleWeather({
+            location: 'Hangzhou',
+            woeid: '',
+            unit: 'c',
+            success: function (weather) {
+                console.log(weather);
+                html = '<h2><i class="icon-' + weather.code + '"></i> ' + weather.temp + '&deg;' + weather.units.temp + '</h2>';
+                html += '<ul><li>' + weather.city + ', ' + weather.region + '</li>';
+                html += '<li class="currently">' + weather.currently + '</li>';
+                html += '<li>' + weather.wind.direction + ' ' + weather.wind.speed + ' ' + weather.units.speed + '</li></ul>';
+
+                $("#weather").html(html);
+            },
+            error: function (error) {
+                $("#weather").html('<p>' + error + '</p>');
+            }
+        });
+
+        $("#scrollDiv").Scroll({line: 1, speed: 500, timer: 5000});
+        $("#scrollDiv2").Scroll({line: 1, speed: 500, timer: 5000});
+
+    });
+</script>
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+<!--<script type="text/javascript" src="js/tinybox.js"></script>-->
+</head>
+
+<body>
+
+<!--<script type="text/javascript">-->
+<!--function ad() {-->
+<!--var content2 = "<div class='pc'><img width='1080' height='720' src='img/pc_ad.jpg' /></div><div class='moblie'><img width='320' height='200' src='img/m_ad.jpg' /></div>";-->
+<!--TINY.box.show(content2)-->
+<!--}-->
+
+<!--</script>-->
+
